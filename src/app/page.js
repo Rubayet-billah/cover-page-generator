@@ -199,11 +199,13 @@ export default function CoverPageGenerator() {
             </div>
 
             {/* Date of submission  */}
-            <div className="flex gap-2 px-6 w-auto bg-white text-xl uppercase mx-4">
-              <div className=" tracking-widest  border-gray-200">
-                Date of submission :
+            <div className="absolute bottom-16 w-full flex justify-center gap-3 px-6 bg-transparent text-[20px]">
+              <div className="tracking-widest text-slate-700 font-semibold">
+                Date of submission:
               </div>
-              <div className="text-[#003366] font-bold">{new Date(formData.submissionDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' })}</div>
+              <div className="text-[#003366] font-extrabold">
+                {new Date(formData.submissionDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' })}
+              </div>
             </div>
 
             {/* Elegant Bottom Border */}
